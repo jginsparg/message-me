@@ -1,13 +1,15 @@
 class ChatroomController < ApplicationController
   def index
-    u = User.find(1)
-    #puts u.username
-
     @messages = Message.all
-    @message1 = Message.first
-    @user1 = User.find(@message1[:user_id])
-    puts @message1[:body]
-    puts @messages
-  end
 
+
+    #original strategy,
+  #  @finalmessage = ""
+  #  Message.find_each do |message|
+  #    u = User.find(message[:user_id])
+  #    @finalmessage.concat("<i> <strong> #{u[:username]}: </i> </strong>#{message[:body]} <br>")
+  #    end
+
+  #then add <%= @finalmessage.html_safe %> to view
+  end
 end
