@@ -3,3 +3,16 @@
 .chatbox {
   height: 450px;
 }
+
+#messages {
+  height: 15em;
+  overflow: auto;
+}
+
+/* Uncomment this to remove the send button
+.input {
+  button {
+    display.none;
+  }
+}
+*/
